@@ -29,10 +29,10 @@ public class ValidacoesStringTests
         var textoProcurado = "qualquer";
 
         // Act
-         _validacoes.ContemCaractere(texto, textoProcurado);
+        var resultado = _validacoes.ContemCaractere(texto, textoProcurado);
 
         // Assert
-        Assert.True(true);
+        Assert.True(resultado);
     }
 
     [Fact]
@@ -46,7 +46,7 @@ public class ValidacoesStringTests
         var resultado = _validacoes.ContemCaractere(texto, textoProcurado);
 
         // Assert
-        Assert.True(true);
+        Assert.False(resultado);
     }
 
     [Fact]
